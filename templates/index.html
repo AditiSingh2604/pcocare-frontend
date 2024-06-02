@@ -3,12 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Prediction</title>
+    <link rel="stylesheet" href="style.css">
+    <title>PCOcare- Image Prediction</title>
 </head>
 <body>
-    <form action="/predict" method="post" enctype="multipart/form-data">
-        <input type="file" name="image" accept="image/*">
-        <input type="submit" value="Predict">
-    </form>
+
+     <!-- Navbar -->
+     <header>
+        <a href="#" class="logo">PCOcare</a>
+
+        <ul class="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="health.html">Health Library</a></li>
+            <li><a href="signup.html">Signup</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+     </header>
+
+    <!-- 1st section -->
+    <section class="background-section">
+        <div class="content">
+            <div class="text">
+                <h1>Know your body. Own your health.</h1>
+                <p>One in ten women faces polycystic ovary syndrome (PCOS) during her lifetime. Learn about this condition, its common symptoms, and how it's managed.</p>
+
+                <div class="form-box">
+                    <form action="/predict" method="post" enctype="multipart/form-data">
+                        <input type="file" name="image" accept="image/*">
+                        <input type="submit" value="Predict">
+                    </form>
+                </div>
+            </div>
+            <div class="image">
+                <img src="images/girl.png" alt="Health Image">
+            </div>
+        </div>
+     </section>
+
+     <!-- 2nd section -->
+     <section class="pcos-info">
+        <div class="container-2">
+            <div class="text-content">
+                <h1 id="sec2h1">What is PCOS?</h1>
+                <p>
+                    PCOS is a common hormonal condition that is thought to impact between 8% and 13% of women of reproductive age. That's around 5 million people.
+                    However, you might be curious as to what we mean by a hormonal condition. So, let's break PCOS down. PCOS is a condition that affects your hormone 
+                    levels and usually causes an imbalance in your androgen levels, sometimes called male hormones. This imbalance can impact how often you ovulate 
+                    (when your ovaries release an egg for fertilization) and how frequent your periods are. Sometimes people who have PCOS have multiple small cysts 
+                    that form on their ovaries. However, surprisingly, this isn't always the case. You could be diagnosed with PCOS and never have cysts on your ovaries.
+                </p>
+            </div>
+            <div class="image-content">
+                <img src="images/img3.jpg" alt="PCOS Awareness">
+            </div>
+        </div>
+     </section>
+
+     <!-- 3rd section -->
+      <section class="box3">
+            <div class="header2">
+              <h1>Common PCOS symptoms checklist</h1>
+              <p>If you experience symptoms of polycystic ovary syndrome (PCOS), they'll usually become apparent in your late teens or early 20s.</p>
+            </div>
+          
+            <div class="row1-container">
+              <div class="box box-down blue card">
+                  <div class="card-content">
+                      <h2>Missed or irregular periods</h2>
+                      <p>Having few menstrual periods or having periods that aren't regular are common signs of PCOS. So is having periods that last 
+                          for many days or longer than is typical for a period.</p>
+                   </div>
+                   <div class="card-image">
+                        <img src="images/card1.jpg" alt="" id="boximg">
+                   </div>
+              </div>
+          
+              <div class="box red card">
+                  <div class="card-content">
+                      <h2>Excessive hair growth or hair loss</h2>
+                      <p>You might find that dark or coarse hair grows on your arms, chest, face, or abdomen, this excessive hair growth 
+                          is called hirsutism.</p>
+                   </div>
+                   <div class="card-image">
+                        <img src="images/card2.jpg" alt="" id="boximg">
+                   </div>
+              </div>
+          
+              <div class="box box-down blue card">
+                  <div class="card-content">
+                      <h2>Anxiety or depression</h2>
+                      <p>Insomnia or excessive sleep, along with changes in appetite and weight, can be symptoms of both depression and PCOS. Both 
+                      conditions can also cause mood fluctuations, periods of low mood or sadness, and chronic fatigue or low energy levels.</p>
+                  </div>
+                  <div class="card-image">
+                      <img src="images/card4.jpg" alt="" id="boximg">
+                  </div>
+               </div>
+            </div>
+          
+            <div class="row2-container">
+              <div class="box orange card">
+                  <div class="card-content">
+                      <h2>Polycystic Ovaries</h2>
+                      <p>On ultrasound, the ovaries may appear enlarged and have small fluid-filled sacs or follicles, giving them a polycystic 
+                          appearance. However, not all individuals with PCOS will have polycystic ovaries, and the presence of cysts alone is not 
+                          sufficient for a diagnosis.</p>
+                  </div>
+                  <div class="card-image">
+                     <img src="images/card3.png" alt="" id="boximg">
+                  </div>
+              </div>
+            </div>
+      </section>
+
+     <!-- Footer -->
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>About Us</h2>
+                <p>We are a team of passionate developers building applications to solve real life problems.<br/>Pooja Kumari<br/>
+                    Aditi Singh<br/>Kirti Jayant</p>
+            </div>
+            <div class="footer-section links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Health Library</a></li>
+                    <li><a href="#">Signup</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h2>Contact</h2>
+                <p>Email: pooja.2024cs1127@kiet.edu</p>
+                <p><a href="https://github.com/KIET-Github/CS-2024-B/tree/main/PCS24-51-KirtiJayant">Github</a> </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 PCOCare.com | Developed by PCS24-51 Team
+        </div>
+     </footer>
+
 </body>
 </html>
